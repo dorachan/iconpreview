@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="robots" content="noindex">
+  <title>アイコンプレビュー</title>
+  <style>
+    body {
+      background-color: #aaa;
+    }
+
+    .show {
+      display: block;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .note {
+      margin-top: 0;
+      margin-bottom: 0em
+    }
+
+    img {
+      width: 100px;
+      height: 100px;
+    }
+
+    .icon {
+      display: inline-block;
+      width: 150px;
+    }
+
+    .square img {
+      border-radius: 0%;
+    }
+
+    .android img {
+      border-radius: 5%;
+    }
+
+    .iphone img {
+      border-radius: 20%;
+    }
+
+    .twitter img {
+      border-radius: 50%;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>アイコンプレビュー</h1>
+  <p class="note">画像ファイルを各種アイコンサイズでトリミングします</p>
+
+  <div id="upload">
+    <h3>画像ファイルを選択してください</h3>
+    <input type="file" id="files" name="files">
+  </div>
+
+  <div class="icon square">
+    <h3>Square</h3>
+    <img>
+  </div>
+
+  <div class="icon android">
+    <h3>Android</h3>
+    <img>
+  </div>
+
+  <div class="icon iphone">
+    <h3>iPhone</h3>
+    <img>
+  </div>
+
+  <div class="icon twitter">
+    <h3>Twitter</h3>
+    <img>
+  </div>
+
+  <script src="iconpreview.js"></script>
+</body>
+
+</html>
